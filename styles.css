@@ -20,19 +20,39 @@ nav{
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-color: var(--bright-fern);
+    background-color: rgba(100, 193, 50, 0.937);
     color: var(--platinum);
-    padding: 10px;
+    padding: 25px;
     margin-bottom: 10px;
+    gap: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .logo{
     padding: 10px;
     justify-content: center;
-    text-align: center;
-    background-color: var(--carbon-black);
+    width: 75vw;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14pt;
     border-radius: 10px;
     align-items: start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.header-nav-links{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
 }
 
 ul{
@@ -45,13 +65,22 @@ ul{
     gap: 10px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 section{
+    margin: 10px;
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 10px;
+    padding: 15px;
     background-color: var(--pine-blue);
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    height: 25vh;
 }
 
 h2{
@@ -59,5 +88,42 @@ h2{
     font-family: var(--primary-font);
     text-shadow: 1px 3px 5px rgb(0, 0, 0);
     margin: 10px;
+    text-align: right;
 
+}
+
+p{
+    font-size: 12pt;
+    text-align: justify;
+}
+
+#about{
+    margin-top: 55px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    background-color: var(--carbon-black);
+    color: var(--platinum);
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 15px;
+    
+}
+
+.footer-content{
+  text-align: left;
+  padding: 15px;
+}
+
+.footer-nav-links li{
+    justify-content: center;
+    text-align: center;
+    font-size: 12pt;
+    display: flex;
+    flex-direction: column;
 }
