@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doppio+One&family=Saira:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --primary-font: "Ubuntu", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --cta-font: "Dopio One", sans-serif;
+
+  --carbon-black: #1e2019ff;
+  --platinum: #eff2f1ff;
+  --pine-blue: #297373ff;
+  --bright-fern: #63c132ff;
+  --yellow-green: #85cb33ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--bright-fern);
+    color: var(--platinum);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--carbon-black);
+    border-radius: 10px;
+    align-items: start;
+}
+
+ul{
+    font-family: var(--cta-font);
+    font-weight: bolder;
+    font-size: 14pt;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+section{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: var(--pine-blue);
+    color: white;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 2.5em;
+    font-family: var(--primary-font);
+    text-shadow: 1px 3px 5px rgb(0, 0, 0);
+    margin: 10px;
+
+}
