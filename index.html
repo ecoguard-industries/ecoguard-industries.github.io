@@ -3,14 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoGuard Industries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>EcoGuard Industries | Connected environmental technology</title>
+    <meta name="description"
+        content="EcoGuard Industries is an early-stage South African company building connected sensing, automation and data systems. Our first system is EcoWildGuard.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Tag Manager -->
     <script src="google_tag_manager.js"></script>
     <!-- End Google Tag Manager -->
     <script src="https://kit.fontawesome.com/8f530133e7.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -18,102 +25,313 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCKQ88BN" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <main>
-        <header>
-            <nav>
-                <div class="logo">EcoGuard Industries</div>
-                <div class="header-nav-links">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#mission">Mission</a></li>
-                        <li><a href="#ecowildguard">EcoWildGuard</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li id="theme-icon"><i class="fa-solid fa-circle-half-stroke"></i></li>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#home" aria-label="EcoGuard Industries, home">
+                <span class="logo-mark" aria-hidden="true">EG</span>
+                <span class="logo-text">EcoGuard Industries</span>
+            </a>
+            <nav class="top-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#home" data-nav="home">Home</a></li>
+                    <li><a href="#about" data-nav="about">About</a></li>
+                    <li><a href="#technology" data-nav="technology">Technology</a></li>
+                    <li><a href="#ecowildguard" data-nav="ecowildguard">EcoWildGuard</a></li>
+                    <li><a href="#mission" data-nav="mission">Mission</a></li>
+                    <li><a href="#contact" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false"
+                aria-label="Switch to dark theme">
+                <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero section" id="home" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="tag">R&amp;D // 001</p>
+                    <h1 id="hero-title">Engineering technology for a more sustainable world.</h1>
+                    <p class="lead">EcoGuard Industries develops connected environmental monitoring, automation and
+                        data systems, combining field hardware with software we build ourselves.</p>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="#technology">Explore Our Technology</a>
+                        <a class="btn btn-secondary" href="#ecowildguard">Explore EcoWildGuard</a>
+                    </div>
+                    <ul class="meta-list">
+                        <li><span class="status-dot" aria-hidden="true"></span>System status // Active development</li>
+                        <li>Est. // 2026</li>
+                        <li>Origin // South Africa</li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-        <div class="content-section">
-            <section id="about">
-                <h2>Who We Are</h2>
-                <p>
-                    We started EcoGuard Industries in 2026, after a hackathon competition by MICTSETA & AlgoAtWork,
-                    hosted
-                    at Ehlanzeni TVET College, as a group of five, we had to do research on specific problem based on
-                    the
-                    domain given to us, and build the solution protoype. Right after the competition, instead of
-                    disbanding
-                    and going our own individual ways, we came to an agreement to further and enhance our prototype, and
-                    as
-                    so we established EcoGuard Industries.
-                </p>
-                <hr>
-            </section>
-            <section id="mission">
-                <h2>Our Mission</h2>
-                <p>
-                    Our misson, is to make technology that protects, serves and promotes coexistence between and amongst
-                    the
-                    nature, wildlife and people.
-                </p>
-                <hr>
-            </section>
-            <section id="ecowildguard">
-                <h2>EcoWildGuard</h2>
-                <p>
-                    EcoWildGuard is the first system, we built during the hackathon, it is on the basic level, a
-                    wildlife,
-                    nature reserve road crossing detection system.
-                </p>
-                <hr>
-            </section>
-            <section id="contact">
-                <h2>Reach Out</h2>
-                <div class="contact-form">
-                    <form action="">
-                        <label>First Name(s):
-                            <input type="text" name="first-name" placeholder="John" required>
-                        </label>
-                        <label>Last Name:
-                            <input type="text" name="last-name" placeholder="Doe" required>
-                        </label>
-                        <label>
-                            Email:
-                            <input type="text" name="email" placeholder="johndoe@example.com" required>
-                        </label>
-                        <label>
-                            Phone no.:
-                            <input type="text" name="contact-no">
-                        </label>
-                        <label>Enquiry:
-                            <input type="text" name="enquiry" required>
-                        </label>
-
-                        <button type="submit" id="submit">Submit</button>
-
-
-                    </form>
-                </div>
-            </section>
-        </div>
-        <footer id="footer">
-            <div class="footer-content">
-                <h4>EcoGuard Industries</h4>
-                <p>&copy; 2026 All Rights Reserved</p>
+                <figure class="panel hero-diagram reveal">
+                    <figcaption class="panel-bar"><span>SYSTEM // ONLINE</span><span>FIG. 01</span></figcaption>
+                    <ol class="flow flow-vertical">
+                        <li><span class="flow-label">Environment</span><span class="flow-note">Real-world
+                                conditions</span></li>
+                        <li><span class="flow-label">Sensor</span><span class="flow-note">Field hardware</span></li>
+                        <li><span class="flow-label">Edge device</span><span class="flow-note">Local processing</span>
+                        </li>
+                        <li><span class="flow-label">EcoGuard API</span><span class="flow-note">Backend services</span>
+                        </li>
+                        <li><span class="flow-label">Automated response</span><span class="flow-note">Warnings and
+                                actuators</span></li>
+                    </ol>
+                    <p class="panel-foot">Concept diagram of our system architecture.</p>
+                </figure>
             </div>
-            <div class="footer-nav-links">
-                <ul>
-                    <li>Company</li>
-                    <li>Newsletter</li>
-                    <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
-                    <li>EcoWildGuard</li>
+        </section>
+
+        <!-- 01 WHO WE ARE -->
+        <section class="section section-alt" id="about" aria-labelledby="about-title">
+            <div class="container split">
+                <div class="section-head">
+                    <p class="tag">01 // Who we are</p>
+                    <h2 id="about-title">Five people. One prototype. Still building.</h2>
+                </div>
+                <div class="prose reveal">
+                    <p>EcoGuard Industries began at the MICT SETA and AlgoAtWork hackathon, hosted at Ehlanzeni TVET
+                        College. The five of us worked as a team to research a problem in our assigned domain and build
+                        a
+                        working prototype.</p>
+                    <p>When the competition ended, we chose not to go our separate ways. We agreed to keep developing
+                        the prototype together, and in 2026 that decision became EcoGuard Industries.</p>
+                    <p>We are an early-stage South African company. We are testing, learning and working towards
+                        real-world pilots.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 TECHNOLOGY -->
+        <section class="section" id="technology" aria-labelledby="tech-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="tag">02 // Technology</p>
+                    <h2 id="tech-title">Sense. Understand. Respond. Analyse.</h2>
+                    <p class="lead">Every system we build follows the same four-stage loop.</p>
+                </div>
+                <div class="card-grid">
+                    <article class="card reveal">
+                        <p class="tag">Stage 01</p>
+                        <h3>Sense</h3>
+                        <p>Connected field hardware gathers real-world information.</p>
+                    </article>
+                    <article class="card reveal">
+                        <p class="tag">Stage 02</p>
+                        <h3>Understand</h3>
+                        <p>Edge devices and software interpret incoming conditions.</p>
+                    </article>
+                    <article class="card reveal">
+                        <p class="tag">Stage 03</p>
+                        <h3>Respond</h3>
+                        <p>Systems can trigger warnings, actuators or other interventions.</p>
+                    </article>
+                    <article class="card reveal">
+                        <p class="tag">Stage 04</p>
+                        <h3>Analyse</h3>
+                        <p>Backend platforms preserve data and provide operational insight.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 ECOWILDGUARD -->
+        <section class="section section-dark" id="ecowildguard" aria-labelledby="ewg-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="tag">03 // Flagship system</p>
+                    <span class="badge"><span class="status-dot" aria-hidden="true"></span>Prototype // Active
+                        development</span>
+                    <h2 id="ewg-title">EcoWildGuard</h2>
+                    <p class="lead">Intelligent protection for wildlife-sensitive transport corridors.</p>
+                </div>
+                <div class="split">
+                    <div class="prose">
+                        <p>EcoWildGuard is a developing prototype that combines physical hardware and software. It
+                            started as our hackathon entry and is now our main focus. It has not been deployed
+                            commercially.</p>
+                        <p><strong>About the sensors:</strong> the current prototype uses simpler sensors for
+                            proof-of-concept testing. They detect presence or movement and do not identify species.
+                            Future versions may use radar, thermal sensing, computer vision or other detection
+                            technology better suited to field conditions.</p>
+                    </div>
+                    <ul class="capabilities">
+                        <li>Roadside detection</li>
+                        <li>Local automated response</li>
+                        <li>Connected telemetry</li>
+                        <li>Operator dashboard</li>
+                        <li>Incident monitoring</li>
+                        <li>Spatial / 3D visualisation</li>
+                        <li>Future advanced sensing</li>
+                    </ul>
+                </div>
+                <figure class="panel reveal">
+                    <figcaption class="panel-bar"><span>EcoWildGuard // Signal path</span><span>FIG. 02</span>
+                    </figcaption>
+                    <ol class="flow flow-grid">
+                        <li><span class="flow-label">Wildlife or environmental event</span></li>
+                        <li><span class="flow-label">Roadside sensing</span></li>
+                        <li><span class="flow-label">Edge device</span></li>
+                        <li><span class="flow-label">Automated response</span></li>
+                        <li><span class="flow-label">API / backend</span></li>
+                        <li><span class="flow-label">Operator dashboard</span></li>
+                        <li><span class="flow-label">Spatial / 3D view</span></li>
+                    </ol>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 04 HARDWARE + SOFTWARE -->
+        <section class="section" id="system" aria-labelledby="system-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="tag">04 // Architecture</p>
+                    <h2 id="system-title">Real hardware.<br>Real software.<br>One connected system.</h2>
+                </div>
+                <figure class="panel reveal">
+                    <figcaption class="panel-bar"><span>System architecture // v0.1 concept</span><span>FIG. 03</span>
+                    </figcaption>
+                    <ol class="flow flow-grid flow-wide">
+                        <li><span class="flow-label">Physical environment</span><span class="flow-note">Hardware
+                                layer</span></li>
+                        <li><span class="flow-label">Sensors</span><span class="flow-note">Hardware layer</span></li>
+                        <li><span class="flow-label">Edge device</span><span class="flow-note">Embedded layer</span>
+                        </li>
+                        <li><span class="flow-label">API</span><span class="flow-note">Software layer</span></li>
+                        <li><span class="flow-label">Cloud / backend</span><span class="flow-note">Software layer</span>
+                        </li>
+                        <li><span class="flow-label">Dashboard</span><span class="flow-note">Software layer</span></li>
+                        <li><span class="flow-label">3D / spatial view</span><span class="flow-note">Software
+                                layer</span></li>
+                    </ol>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 05 MISSION -->
+        <section class="section section-alt" id="mission" aria-labelledby="mission-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="tag">05 // Mission</p>
+                    <h2 id="mission-title">Our mission</h2>
+                    <p class="lead mission-quote">Our mission is to develop technology that protects, serves and
+                        promotes coexistence between people, wildlife and the environments we share.</p>
+                </div>
+                <ul class="card-grid principles">
+                    <li class="card reveal">
+                        <h3>Environmental responsibility</h3>
+                        <p>We consider the impact of what we build, from materials to power use.</p>
+                    </li>
+                    <li class="card reveal">
+                        <h3>Practical engineering</h3>
+                        <p>We favour designs that work in the field over designs that only look good in a demo.</p>
+                    </li>
+                    <li class="card reveal">
+                        <h3>Repairability</h3>
+                        <p>Hardware should be understandable, serviceable and fixable by the people who use it.</p>
+                    </li>
+                    <li class="card reveal">
+                        <h3>Efficient systems</h3>
+                        <p>Do the work at the edge where it makes sense, and keep power and data use modest.</p>
+                    </li>
+                    <li class="card reveal">
+                        <h3>Local innovation</h3>
+                        <p>We are building in South Africa, for the conditions we know and the problems close to us.</p>
+                    </li>
+                    <li class="card reveal">
+                        <h3>Long-term sustainability</h3>
+                        <p>We want systems that can be maintained and improved over years, not months.</p>
+                    </li>
                 </ul>
             </div>
-        </footer>
+        </section>
+
+        <!-- 06 CONTACT -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container split">
+                <div class="section-head">
+                    <p class="tag">06 // Contact</p>
+                    <h2 id="contact-title">Talk to us</h2>
+                    <p class="lead">Interested in a pilot, a partnership or the technology? Send us a message.</p>
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> South Africa</li>
+                        <li><i class="fa-solid fa-microchip" aria-hidden="true"></i> Early-stage, open to pilot
+                            conversations</li>
+                        <!-- Add your public contact email here, for example:
+                        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:you@example.com">you@example.com</a></li> -->
+                    </ul>
+                </div>
+                <form class="panel contact-form" id="contact-form" method="post" action="" data-endpoint="" novalidate>
+                    <p class="panel-bar"><span>ENQUIRY // FORM</span><span>001</span></p>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="first-name">First name</label>
+                            <input id="first-name" name="first-name" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="field">
+                            <label for="last-name">Last name</label>
+                            <input id="last-name" name="last-name" type="text" autocomplete="family-name" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone <span class="optional">(optional)</span></label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+                    <div class="field">
+                        <label for="message">Enquiry / message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send enquiry</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    <p class="form-note">This form is not yet connected to a messaging service.</p>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">EcoGuard Industries</p>
+                <p>&copy; <span id="year">2026</span> EcoGuard Industries</p>
+            </div>
+            <nav aria-label="Footer">
+                <ul class="footer-links">
+                    <li><a href="#about">Company</a></li>
+                    <li><a href="careers/index.html">Careers</a></li>
+                    <li><a href="#ecowildguard">EcoWildGuard</a></li>
+                    <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <p class="tag footer-tag">EcoGuard Industries // South Africa // Est. 2026</p>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="Mobile">
+        <ul>
+            <li><a href="#home" data-nav="home"><i class="fa-solid fa-house"
+                        aria-hidden="true"></i><span>Home</span></a></li>
+            <li><a href="#about" data-nav="about"><i class="fa-solid fa-users"
+                        aria-hidden="true"></i><span>About</span></a></li>
+            <li><a href="#technology" data-nav="technology"><i class="fa-solid fa-microchip"
+                        aria-hidden="true"></i><span>Tech</span></a></li>
+            <li><a href="#ecowildguard" data-nav="ecowildguard"><i class="fa-solid fa-paw"
+                        aria-hidden="true"></i><span>WildGuard</span></a></li>
+            <li><a href="#contact" data-nav="contact"><i class="fa-solid fa-envelope"
+                        aria-hidden="true"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
 </body>
-<script src="main.js"></script>
 
 </html>
